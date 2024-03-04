@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+<style>
+    body{background-image:url(static/img/background.jpg);background-size: cover;}
+    .tekst_sverhu_kartinki {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-transform: uppercase;
+    color: white;
+    width: 60%;
+    background: #00000094;
+    padding: 10px;
+    text-align: center;
+    font: bold 24px/34px Helvetica, Sans-Serif;
+    }
+</style>
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="https://www.stost.ru/media/2020-03-02/м9.jpg">
+            <img src="{{ url_for('static', filename='img/rous.jpg') }}" alt="тут должна быть роза" width="100px"
+                 height="85px">   С 8 МАРТА ДЕВУШКИ</a>
+    </nav>
+</header>
+<!-- Begin page content -->
+<main role="main" class="container">
+    {% block content %}
+
+    {% endblock %}
+</main>
+</body>
+</html>
